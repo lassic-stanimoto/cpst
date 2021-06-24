@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <a id="page_top">ページの先頭</a>
+    <h1>Clickerアプリの内部ブラウザから、ClickerアプリのAR Cameraを起動（URLスキーム「clicker-ar://」を使用）</h1>
+    <hr>
+    <ul>
+        <li>
+            <a href="clicker-ar://image?url=http://cp-service.sakura.ne.jp/demo/frame/frame02.png?dateformat=1&color=0,0,0&sizepos=m1">launch AR Camera Viewer via URL scheme</a>
+        </li>
+    </ul>
+    ブラウザからClickerアプリを起動(各種URLスキームを使う)
+    <hr>
+    <ul>
+        <li>public , default</li>
+        <li><a href="cp-clicker://server/public/default/CP00">URLScheme = cp-clicker, AccessPoint = public, CustomerID = default, DBName = CP00</a></li>
+        <li><a href="cp-clicker://server/public/default/SP998">URLScheme = cp-clicker, AccessPoint = public, CustomerID = default, DBName = SP998</a></li>
+    </ul>
+    <ul>
+        <li>test , test</li>
+        <li><a href="cp-clicker://server/test/test/CP00">URLScheme = cp-clicker, AccessPoint = test, CustomerID = test, DBName = CP00</a></li>
+        <li><a href="cp-clicker://server/test/test/SP998">URLScheme = cp-clicker, AccessPoint = test, CustomerID = test, DBName = SP998</a></li>
+    </ul>
+    <ul>
+        <li>8.1.1.782-784  <a href="TamagoClicker://server/public/default/CP00">URLScheme = TamagoClicker, AccessPoint = public, CustomerID = default, DBName = CP00</a></li>
+        <li>8.1.1.785-786  <a href="CPCLICKER://server/test/test/search_SP998">URLScheme = CPCLICKER, AccessPoint = test, CustomerID = test, DBName = search_SP998</a></li>
+        <li>8.1.1.787-788  <a href="cp-clicker://server/public/default/CP00">URLScheme = cp-clicker, AccessPoint = public, CustomerID = default DBName = CP00</a></li>
+        <li>リンクのURLが勝手に小文字になるので、使えません！8.1.1.789      <a href="TaMaGoClicker://server/public/default/CP00">URLScheme = TaMaGoClicker, AccessPoint = public, CustomerID = default, DBName = CP00</a></li>
+        <li>8.1.1.790-791  <a href="TamagoClicker://server2/REF">URLScheme = TamagoClicker, AccessPoint = server2, DBType = REF</a></li>
+        <li>8.1.1.792-793  <a href="CPCLICKER://server2/REG">URLScheme CPCLICKER And server2/REG</a></li>
+        <li>8.1.1.794-795  <a href="cp-clicker://server2/REF">URLScheme cp-clicker And server2/REF</a></li>
+        <li>8.1.1.796      <a href="CpClicker://server2/REF">URLScheme CpClicker And server2/REF</a></li>
+        <li>8.1.1.797-800  <a href="TAMAGOCLICKER://custom?screen=collection&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp">URLScheme TAMAGOCLICKER And custom is  screen=collection&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp</a></li>
+        <li>8.1.1.801-805  <a href="cpclicker://custom?caller=ClickerURLSchemeApp%3A%2F%2F">URLScheme cpclicker And custome is caller=ClickerURLSchemeApp%3A%2F%2F</a></li>
+        <li>8.1.1.806-808  <a href="cpclicker://server/test/test/search_SP998/custom?screen=scan&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=Demo">URLScheme cpclicker, AccessPoint = test, CustomerID = test, DBName = search_SP998, custom is screen=scan&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=Demo</a></li>
+        <li>8.1.1.809      <a href="TamagoClicker://custom?screen=settings&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp">URLScheme TamagoClicker And custom is screen=settings&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp</a></li>
+        <li>demo<a href="cp-clicker://custom?screen=collection&caller=youtube%3Ayoutube&backButtonTitle=CallerApp">URLScheme</a></li>
+    </ul>
+    ブラウザからClickerアプリを起動(URLスキーム「cpclicker://」使用)
+    <hr>
+    <ul>
+        <li>＊お試し検索　/test/search</li>
+        <li>
+            <a href="cpclicker://server/creator.clickablepaper.com/test/search">test/search</a>
+        </li>
+        <li><a href="cpclicker://server/creator.clickablepaper.com/test/search/custom?screen=hello&caller=Chrome%3A%2F%2F&backButtonTitle=Chrome">8.1.1.756 Error Case</a></li>
+        <li>＊お試し検索　SP998</li>
+        <li><a href="cpclicker://server/creator.clickablepaper.com/test/search_SP998">8.1.1.785-786 test/test/search_SP998</a></li>
+        <li><a href="cpclicker://server/creator.clickablepaper.com/test/search_SP998/custom?screen=scan&caller=Chrome%3A%2F%2F&backButtonTitle=Demo">8.1.1.806-808</a></li>
+        <li>/public/default/CP00</li>
+        <li><a href="cpclicker://server/creator.clickablepaper.com/public/default/CP00">8.1.1.782-784, 8.1.1.787-788 public/default/CP00</a></li>
+        <li>＊REF</li>
+        <li><a href="cpclicker://server/creator.clickablepaper.com/REF">8.1.1.789, 8.1.1.790-791, 8.1.1.794-795, 8.1.1.796 REF</a></li>
+        <li><a href="cpclicker://server/server2/REF">8.1.1.794-795 /server2/REF</a></li>
+        <li>＊REG</li>
+        <li><a href="cpclicker://server/creator.clickablepaper.com/REG">8.1.1.792-793 REG</a></li>
+        <li><a href="cpclicker://server/server2/REG">8.1.1.792-793 /server2/REG</a></li>
+        <li>＊その他</li>
+        <li><a href="cpclicker://custom?screen=collection&caller=Chrome%3A%2F%2F&backButtonTitle=Chrome">8.1.1.797-800 ORG</a></li>
+        <li><a href="cpclicker://custom?screen=collection&caller=Chrome%3A&backButtonTitle=Chrome">8.1.1.797-800</a></li>
+        <li><a href="cpclicker://custom?caller=Chrome%3A%2F%2F">8.1.1.801-805</a></li>
+        <li><a href="cpclicker://custom?screen=settings&caller=Chrome%3A%2F%2F&backButtonTitle=Chrome">8.1.1.809</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdmkaovg_hxousQ9ucWA9VYIMShiSTBlZx2E0Tqda5QyonN4A/viewform?usp=pp_url&entry.377672662=[uiid]&entry.667345283=[latitude]&entry.233166737=[longitude]&entry.1156333442=[accuracy]&entry.506173262=[lang]&entry.539693085=[gpscapture]&entry.1710119936=[dvtk]&entry.1583813956=[PushTag_1]%E2%80%9D">gpscapture</a></li>
+    </ul>
+    <a href="#page_top">ページの先頭へ</a>
+</body>
+</html>
