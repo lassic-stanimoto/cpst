@@ -15,7 +15,7 @@
     </ul>
     <hr>
 
-    <h1>ブラウザからClickerアプリを起動(各種URLスキームを使う)</h1>
+    <h1>ブラウザからClickerアプリを起動</h1>
     <ul>
         <li>public , default</li>
         <li><a href="cp-clicker://server/public/default/CP00">URLScheme = cp-clicker, AccessPoint = public, CustomerID = default, DBName = CP00</a></li>
@@ -28,7 +28,23 @@
     </ul>
     <hr>
 
-    <h1>ブラウザからClickerアプリを起動(各種URLスキームを使う)</h1>
+    <h1>戻るボタン付きで、ブラウザからClickerアプリを起動</h1>
+    <ul>
+        <li>URLScheme = cpclicker, AccessPoint = public, CustomerID = default, DBName = ??</li>
+        <li>Browser <a href="cpclicker://custom?screen=collection&caller=http://&backButtonTitle=CallerApp">screen=collection caller=http:// backButtonTitle=CallerApp</a></li>
+        <li>LINE <a href="cpclicker://custom?screen=collection&caller=line://&backButtonTitle=Back To MyApp">screen=collection caller=line:// backButtonTitle=Back To MyApp</a></li>
+        <li>Geo <a href="cpclicker://custom?screen=collection&caller=geo://">screen=collection caller=geo:// *backButtonTitle not set</a></li>
+    </ul>
+    <ul>
+        <li>FaceBook</li>
+        <li><a href="cpclicker://custom?screen=collection&caller=fb://&backButtonTitle=Facebook">Facebook screen=collection caller=fb:// backButtonTitle=Facebook</a></li>
+        <li><a href="cpclicker://custom?caller=fb://">Facebook caller=fb://</a></li>
+        <li>FaceBook AccessPoint = test, CustomerID = test, DBName = search_SP998, screen=scan, caller=fb://, backButtonTitle=Facebook</li>
+        <li><a href="cpclicker://server/test/test/search_SP998/custom?screen=scan&caller=fb://&backButtonTitle=Facebook">FaceBook AccessPoint = test, CustomerID = test, DBName = search_SP998, screen=scan, caller=fb://, backButtonTitle=Facebook</a></li>
+    </ul>
+    <hr>
+
+    <h1>いろいろなURLスキーム指定で、ブラウザからClickerアプリを起動</h1>
     <ul>
         <li>8.1.1.782-784  <a href="TamagoClicker://server/public/default/CP00">URLScheme = TamagoClicker, AccessPoint = public, CustomerID = default, DBName = CP00</a></li>
         <li>8.1.1.785-786  <a href="CPCLICKER://server/test/test/search_SP998">URLScheme = CPCLICKER, AccessPoint = test, CustomerID = test, DBName = search_SP998</a></li>
@@ -38,11 +54,8 @@
         <li>8.1.1.792-793  <a href="CPCLICKER://server2/REG">URLScheme CPCLICKER And server2/REG</a></li>
         <li>8.1.1.794-795  <a href="cp-clicker://server2/REF">URLScheme cp-clicker And server2/REF</a></li>
         <li>8.1.1.796      <a href="CpClicker://server2/REF">URLScheme CpClicker And server2/REF</a></li>
-        <li>8.1.1.797-800  <a href="TAMAGOCLICKER://custom?screen=collection&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp">URLScheme TAMAGOCLICKER And custom is  screen=collection&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp</a></li>
-        <li>8.1.1.801-805  <a href="cpclicker://custom?caller=ClickerURLSchemeApp%3A%2F%2F">URLScheme cpclicker And custome is caller=ClickerURLSchemeApp%3A%2F%2F</a></li>
         <li>8.1.1.806-808  <a href="cpclicker://server/test/test/search_SP998/custom?screen=scan&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=Demo">URLScheme cpclicker, AccessPoint = test, CustomerID = test, DBName = search_SP998, custom is screen=scan&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=Demo</a></li>
         <li>8.1.1.809      <a href="TamagoClicker://custom?screen=settings&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp">URLScheme TamagoClicker And custom is screen=settings&caller=ClickerURLSchemeApp%3A%2F%2F&backButtonTitle=CallerApp</a></li>
-        <li>demo<a href="cp-clicker://custom?screen=collection&caller=youtube%3Ayoutube&backButtonTitle=CallerApp">URLScheme</a></li>
     </ul>
     <hr>
 
