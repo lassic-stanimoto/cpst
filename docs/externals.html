@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <script>
+        function openFBURLScheme() {
+            window.location.href = "fb://";
+        }
+        function openYouTubeHttps() {
+            // https://www.youtube.com/watch?v=ciqZzRU5jss
+            window.location.href = "https://youtu.be/ciqZzRU5jss";
+        }
+        function openPdf() {
+            window.location.href = "http://cp-service.sakura.ne.jp/rj_pps/clicka/sample.pdf";
+        }
+        function openJSAlert() {
+           alert("test");
+        }
+
+    </script>
+    <a id="page_top">ページの先頭</a>
+    <hr>
+
+    <h1>PDFファイルへのリンク</h1>
+    <ul>
+        <li>
+            <a href="http://www.pdf995.com/samples/pdf.pdf">PDF Sample</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h1>JavascriptでFacebookアプリ起動</h1>
+    <ul>
+        <li>
+            <a href="javascript:void(0)" onclick="openFBURLScheme();">FB url scheme via JS link</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h1>JavascriptでYoutubeに遷移</h1>
+    <ul>
+        <li>
+            <a href="javascript:void(0)" onclick="openYouTubeHttps();">You tube JS</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h1>JavascriptでPDF開く</h1>
+    <ul>
+        <li>
+            <a href="javascript:void(0)" onclick="openPdf();">Open PDF</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h1>JavascriptでAlertボックス表示</h1>
+    <ul>
+        <li>
+            <a href="javascript:void(0)" onclick="openJSAlert();">Open JS Alert</a>
+        </li>
+    </ul>
+    <hr>
+
+    <a href="#page_top">ページの先頭へ</a>
+</body>
+</html>
