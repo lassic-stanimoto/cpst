@@ -19,6 +19,10 @@
         function openJSAlert() {
            alert("test");
         }
+        function goIndexPageAfterJSAlert() {
+           alert("test");
+           window.location.href = "https://lassic-stanimoto.github.io/cpst/index.html";
+        }
 
     </script>
     <a id="page_top">ページの先頭</a>
@@ -63,6 +67,14 @@
     <ul>
         <li>
             <a href="javascript:void(0)" onclick="openJSAlert();">Open JS Alert</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h1>JavascriptでAlertボックス表示した後に画面遷移</h1>
+    <ul>
+        <li>
+            <a href="javascript:void(0)" onclick="goIndexPageAfterJSAlert();">Go Index Page After JS Alert</a>
         </li>
     </ul>
     <hr>
