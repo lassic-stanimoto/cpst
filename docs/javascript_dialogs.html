@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<h1>JavaScript各種ダイアログの動作確認用</h1>
+<ul>
+<li><input type="button" value="alert" onclick="alert('alertのテストです。')"></li>
+<li><input type="button" value="confirm" onclick="r=confirm('confirmのテストです。');alert(r)"></li>
+<li><input type="button" value="prompt" onclick="r=prompt('promptのテストです。');alert(r)"></li>
+<li><input type="button" value="console.log" onclick="console.log('console.log()のテストです。')"></li>
+<li><input type="button" value="event" onclick="window.webkit.messageHandlers.event.postMessage('eventのテストです。')"></li>
+</ul>
+
+see https://note.com/npaka/n/n3acc1e1b8036
+
+</body>
+</html>
