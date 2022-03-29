@@ -58,6 +58,49 @@
         </li>
     </ul>
 
+    <h1>その４</h1>
+    <ul>
+        <li>/cpst/collection?destinationUrl=https://lassic-stanimoto.github.io/cpst/index.html
+            <a href="https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://lassic-stanimoto.github.io/cpst/index.html&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe">
+                https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://lassic-stanimoto.github.io/cpst/index.html&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe
+            </a>
+        </li>
+        <li>/cpst/collection?destinationUrl=https://www.google.co.jp/search?q=[uiid]（グーグルホーム、UIIDを渡す確認）
+            <a href="https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://www.google.co.jp/search?q=[uiid]&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe">
+                https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://www.google.co.jp/search?q=[uiid]&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe
+            </a>
+        </li>
+        <li>/cpst/collection?destinationUrl=https://www.youtube.com/watch?v=vcd_vKf1TIs（ユーチューブ）
+            <a href="https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://www.youtube.com/watch?v=vcd_vKf1TIs&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe">
+                https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://www.youtube.com/watch?v=vcd_vKf1TIs&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe
+            </a>
+        </li>
+        <li>destinationUrl=https://www.google.com/maps/d/embed?mid=1Rknc-h3uBcVy_HzYqR11ZCyCLO3P--Hl&ll=37.97223,140.77686（カクダプリマップ）
+            <a href="https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://www.google.com/maps/d/embed?mid=1Rknc-h3uBcVy_HzYqR11ZCyCLO3P--Hl&ll=37.97223,140.77686&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe">
+                https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=https://www.google.com/maps/d/embed?mid=1Rknc-h3uBcVy_HzYqR11ZCyCLO3P--Hl&ll=37.97223,140.77686&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe
+            </a>
+        </li>
+    </ul>
+
+    <h1>エラーになるパターン</h1>
+    <ul>
+        <li>destinationUrl=http://www.saga-chiji.jp/report/20220309/#gsc.tab=0
+            <a href="https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=http://www.saga-chiji.jp/report/20220309/#gsc.tab=0&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe">
+                https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=http://www.saga-chiji.jp/report/20220309/#gsc.tab=0&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe
+            </a>
+            <br>
+            ※原因不明。短縮してあるから？sがないhttpだから？
+        </li>
+        <li>destinationUrl=clicker-ar://image?url=http://cp-service.sakura.ne.jp/demo/frame/frame02.png?dateformat=1&color=0,0,0&sizepos=m1（沖縄のARフレーム、日付のパラメータ付き）
+            <a href="https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=clicker-ar://image?url=http://cp-service.sakura.ne.jp/demo/frame/frame02.png?dateformat=1&color=0,0,0&sizepos=m1&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe">
+                https://mydemo02.page.link/?link=https://lassic-stanimoto.github.io/cpst/collection?destinationUrl=clicker-ar://image?url=http://cp-service.sakura.ne.jp/demo/frame/frame02.png?dateformat=1&color=0,0,0&sizepos=m1&apn=com.example.mydemo04&afl=https://lassic-stanimoto.github.io/cpst/media/image/02.jpe
+            </a>
+            <br>
+            ※パラメータ複数は無理（？の後ろに続く＆以降は受け取れない様子）
+            ※clicker-ar://を直接指定するのは無理（組み込めば可能かも？）
+        </li>
+    </ul>
+
     <h1>ダミーDeepLink</h1>
     <ul>
         <li>public , default</li>
